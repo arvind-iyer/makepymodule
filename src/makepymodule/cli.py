@@ -29,7 +29,7 @@ def main():
     os.mkdir(os.path.join(project_dir, "src"))
     module_dir = os.path.join(project_dir, "src", args.module_name)
     os.mkdir(module_dir)
-    os.mknod(os.path.join(module_dir, "__init__.py"))
+    open(os.path.join(module_dir, "__init__.py"), 'w').close()
     setup_path = os.path.join(project_dir, "setup.py")
     
     (cwd, this_file) = os.path.split(__file__)

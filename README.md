@@ -9,7 +9,7 @@ $ pip install git+https://github.com/arvind-iyer/makepymodule
 ## Usage
 To create a new project, simply go to the location you would like to scaffold the project structure and run the following command
 ```bash
-$ makepymodule project_name [--virtualenv=True/False] [--direnv=True/False]
+$ makepymodule project_name [--virtualenv] [--direnv]
 ```
 
 A directory structure as follows will be generated

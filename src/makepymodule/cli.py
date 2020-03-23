@@ -17,9 +17,9 @@ def main():
     parser.add_argument("module_name", type=str, help="Name for python module")
     parser.add_argument("--path", default=".",
                         help="Directory path to build project structure")
-    parser.add_argument("--direnv", default=False,
+    parser.add_argument("--direnv", action='store_true',
                         help="Create direnv config file")
-    parser.add_argument("--virtualenv", default=False,
+    parser.add_argument("--virtualenv", action='store_true',
                         help="Create virtualenv for module project directory")
 
     args = parser.parse_args()

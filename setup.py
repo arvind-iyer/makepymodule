@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    version="1.0.1",
+    version="1.0.2",
     name="makepymodule",
     package_dir={"": "src"},
     package_data={"": ["data/*"]},

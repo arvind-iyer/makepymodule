@@ -31,6 +31,13 @@ def main():
     os.mkdir(module_dir)
     open(os.path.join(module_dir, "__init__.py"), 'w').close()
     setup_path = os.path.join(project_dir, "setup.py")
+
+    if args.direnv:
+        with open(os.path.join(args.module_name, ".envrc"), "w") as f:
+            if args.virtualenv:
+                f.write("source env/bin/activate")
+
+
     
     (cwd, this_file) = os.path.split(__file__)
     template_path = os.path.join(cwd, "data", "setup.template")
